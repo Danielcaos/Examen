@@ -2,6 +2,9 @@ package com.covid.covidweb.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
+
+import lombok.Data;
+
 import java.sql.Timestamp;
 
 
@@ -9,6 +12,7 @@ import java.sql.Timestamp;
  * The persistent class for the acceso database table.
  * 
  */
+@Data
 @Entity
 @NamedQuery(name="Acceso.findAll", query="SELECT a FROM Acceso a")
 public class Acceso implements Serializable {

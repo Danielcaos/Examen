@@ -2,6 +2,9 @@ package com.covid.covidweb.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
+
+import lombok.Data;
+
 import java.sql.Timestamp;
 
 
@@ -9,6 +12,7 @@ import java.sql.Timestamp;
  * The persistent class for the cormobilidad database table.
  * 
  */
+@Data
 @Entity
 @NamedQuery(name="Cormobilidad.findAll", query="SELECT c FROM Cormobilidad c")
 public class Cormobilidad implements Serializable {

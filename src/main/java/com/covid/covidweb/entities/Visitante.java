@@ -2,6 +2,9 @@ package com.covid.covidweb.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
+
+import lombok.Data;
+
 import java.util.Date;
 import java.util.List;
 
@@ -10,6 +13,7 @@ import java.util.List;
  * The persistent class for the visitante database table.
  * 
  */
+@Data
 @Entity
 @NamedQuery(name="Visitante.findAll", query="SELECT v FROM Visitante v")
 public class Visitante implements Serializable {

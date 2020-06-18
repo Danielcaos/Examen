@@ -2,6 +2,9 @@ package com.covid.covidweb.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
+
+import lombok.Data;
+
 import java.util.List;
 
 
@@ -9,6 +12,7 @@ import java.util.List;
  * The persistent class for the tipo database table.
  * 
  */
+@Data
 @Entity
 @NamedQuery(name="Tipo.findAll", query="SELECT t FROM Tipo t")
 public class Tipo implements Serializable {

@@ -2,6 +2,9 @@ package com.covid.covidweb.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
+
+import lombok.Data;
+
 import java.util.List;
 
 
@@ -9,6 +12,7 @@ import java.util.List;
  * The persistent class for the eps database table.
  * 
  */
+@Data
 @Entity
 @Table(name="eps")
 @NamedQuery(name="Ep.findAll", query="SELECT e FROM Ep e")

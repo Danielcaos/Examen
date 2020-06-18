@@ -2,6 +2,9 @@ package com.covid.covidweb.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
+
+import lombok.Data;
+
 import java.util.Date;
 import java.sql.Timestamp;
 import java.util.List;
@@ -11,6 +14,7 @@ import java.util.List;
  * The persistent class for the basico database table.
  * 
  */
+@Data
 @Entity
 @NamedQuery(name="Basico.findAll", query="SELECT b FROM Basico b")
 public class Basico implements Serializable {

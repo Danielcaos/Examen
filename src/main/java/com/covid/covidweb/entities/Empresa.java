@@ -2,6 +2,9 @@ package com.covid.covidweb.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
+
+import lombok.Data;
+
 import java.util.List;
 
 
@@ -9,6 +12,7 @@ import java.util.List;
  * The persistent class for the empresa database table.
  * 
  */
+@Data
 @Entity
 @NamedQuery(name="Empresa.findAll", query="SELECT e FROM Empresa e")
 public class Empresa implements Serializable {

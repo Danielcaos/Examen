@@ -2,6 +2,9 @@ package com.covid.covidweb.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
+
+import lombok.Data;
+
 import java.math.BigDecimal;
 import java.util.Date;
 import java.sql.Timestamp;
@@ -12,6 +15,7 @@ import java.util.List;
  * The persistent class for the registro database table.
  * 
  */
+@Data
 @Entity
 @NamedQuery(name="Registro.findAll", query="SELECT r FROM Registro r")
 public class Registro implements Serializable {

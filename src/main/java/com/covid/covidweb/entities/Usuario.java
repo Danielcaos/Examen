@@ -3,11 +3,14 @@ package com.covid.covidweb.entities;
 import java.io.Serializable;
 import javax.persistence.*;
 
+import lombok.Data;
+
 
 /**
  * The persistent class for the usuario database table.
  * 
  */
+@Data
 @Entity
 @NamedQuery(name="Usuario.findAll", query="SELECT u FROM Usuario u")
 public class Usuario implements Serializable {
